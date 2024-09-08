@@ -1,0 +1,26 @@
+import { Seller } from '../typings/catalog';
+export declare const checkSellerInformation: (sellerInformation: Seller) => {
+    SellerId: string;
+    Name: string;
+    Email: string;
+    Description: string;
+    ExchangeReturnPolicy: string;
+    DeliveryPolicy: string;
+    UseHybridPaymentOptions: boolean;
+    UserName: string;
+    Password: string;
+    SecutityPrivacyPolicy: string;
+    CNPJ: string;
+    CSCIdentification: string;
+    ArchiveId: string;
+    UrlLogo: string;
+    ProductCommissionPercentage: number;
+    FreightCommissionPercentage: number;
+    FulfillmentEndpoint: string;
+    CatalogSystemEndpoint: string;
+    IsActive: boolean;
+    FulfillmentSellerId: string;
+    SellerType: number;
+    IsBetterScope: boolean;
+    MerchantName: string;
+};

@@ -1,0 +1,60 @@
+{
+    "memory": 512,
+    "ttl": 60,
+    "timeout": 10,
+    "minReplicas": 2,
+    "maxReplicas": 3,
+    "routes": {
+        "manifest": {
+            "path": "/_v/api/fake-pay-io/manifest",
+            "handler": "vtex.payment-gateway@1.x/providerManifest",
+            "headers": {
+                "x-provider-app": "vtex.fake-pay-io-connector@0.0.0"
+            },
+            "public": true
+        },
+        "paymentMethods": {
+            "path": "/_v/api/fake-pay-io/payment-methods",
+            "handler": "vtex.payment-gateway@1.x/providerPaymentMethods",
+            "headers": {
+                "x-provider-app": "vtex.fake-pay-io-connector@0.0.0"
+            },
+            "public": true
+        },
+        "authorize": {
+            "path": "/_v/api/fake-pay-io/payments",
+            "public": true
+        },
+        "cancel": {
+            "path": "/_v/api/fake-pay-io/payments/:paymentId/cancellations",
+            "public": true
+        },
+        "settle": {
+            "path": "/_v/api/fake-pay-io/payments/:paymentId/settlements",
+            "public": true
+        },
+        "refund": {
+            "path": "/_v/api/fake-pay-io/payments/:paymentId/refunds",
+            "public": true
+        },
+        "inbound": {
+            "path": "/_v/api/fake-pay-io/payments/:paymentId/inbound/hooks",
+            "public": true
+        },
+        "lisia": {
+            "path": "/_v/api/fake-pay-io/payments/:paymentId/lisia",
+            "public": true
+        },
+        "responses": {
+            "path": "/_v/api/fake-pay-io/responses/:flow",
+            "public": true
+        },
+        "serial": {
+            "path": "/_v/api/fake-pay-io/payments/:paymentId/serial-number",
+            "public": true
+        }
+    },
+    "runtimeArgs": [
+        "--max_old_space_size=409"
+    ]
+}

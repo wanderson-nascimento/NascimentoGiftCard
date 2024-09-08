@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "target": "es2019",
+        "allowJs": false,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "lib": [
+            "es2019"
+        ],
+        "listEmittedFiles": true,
+        "noEmitOnError": false,
+        "outDir": "/cache/build/build_vtex_master/vtex.fake-pay-io-connector@1.0.1/dist/service-node/app",
+        "rootDir": "/cache/build/build_vtex_master/vtex.fake-pay-io-connector@1.0.1",
+        "sourceMap": false,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "types": [
+            "node",
+            "jest"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "vtex.fake-pay-io-connector": [
+                "/cache/build/build_vtex_master/vtex.fake-pay-io-connector@1.0.1/public/@types/vtex.fake-pay-io-connector"
+            ]
+        },
+        "allowSyntheticDefaultImports": false
+    },
+    "exclude": [
+        "node_modules",
+        "node_modules"
+    ],
+    "files": [
+        "/cache/build/build_vtex_master/vtex.fake-pay-io-connector@1.0.1/bundle.ts"
+    ],
+    "typeAcquisition": {
+        "enable": false
+    },
+    "include": [
+        "global.ts",
+        "./**/*"
+    ]
+}

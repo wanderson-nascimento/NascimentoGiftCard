@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Clients = exports.Payloads = void 0;
+const api_1 = require("@vtex/api");
+const clients_1 = require("@vtex/clients");
+exports.Payloads = clients_1.vbaseFor('payloads');
+class Clients extends api_1.IOClients {
+    get payloads() {
+        return this.getOrSet('payloads', exports.Payloads);
+    }
+}
+exports.Clients = Clients;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbm9kZS9jbGllbnRzL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLG1DQUFxQztBQUNyQywyQ0FBd0M7QUFFM0IsUUFBQSxRQUFRLEdBQUcsa0JBQVEsQ0FBa0MsVUFBVSxDQUFDLENBQUE7QUFHN0UsTUFBYSxPQUFRLFNBQVEsZUFBUztJQUNwQyxJQUFXLFFBQVE7UUFDakIsT0FBTyxJQUFJLENBQUMsUUFBUSxDQUFDLFVBQVUsRUFBRSxnQkFBUSxDQUFDLENBQUE7SUFDNUMsQ0FBQztDQUNGO0FBSkQsMEJBSUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJT0NsaWVudHMgfSBmcm9tICdAdnRleC9hcGknXG5pbXBvcnQgeyB2YmFzZUZvciB9IGZyb20gJ0B2dGV4L2NsaWVudHMnXG5cbmV4cG9ydCBjb25zdCBQYXlsb2FkcyA9IHZiYXNlRm9yPHN0cmluZywgUmVjb3JkPHN0cmluZywgdW5rbm93bj4+KCdwYXlsb2FkcycpXG5leHBvcnQgdHlwZSBQYXlsb2FkcyA9IEluc3RhbmNlVHlwZTx0eXBlb2YgUGF5bG9hZHM+XG5cbmV4cG9ydCBjbGFzcyBDbGllbnRzIGV4dGVuZHMgSU9DbGllbnRzIHtcbiAgcHVibGljIGdldCBwYXlsb2FkcygpIHtcbiAgICByZXR1cm4gdGhpcy5nZXRPclNldCgncGF5bG9hZHMnLCBQYXlsb2FkcylcbiAgfVxufVxuIl19

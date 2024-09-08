@@ -1,0 +1,107 @@
+{
+  "name": "FakePayIO",
+  "serviceUrl": "/_v/api/fake-pay-io",
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Mastercard",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "American Express",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Diners",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Elo",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Hipercard",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Visa Electron",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Maestro",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Mastercard Debit",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "BankInvoice",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Promissories",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Privatelabels",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Cobranded",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "PicPay",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Cash",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Pix",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "PSE",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "PuntosColombia",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Chargeafter",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Google Pay",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Apple Pay",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "MBWay",
+      "allowsSplit": "disabled"
+    },
+    {
+      "name": "Venda Direta Credito",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Venda Direta Debito",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Aura",
+      "allowsSplit": "onCapture"
+    }
+
+  ]
+}

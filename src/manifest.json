@@ -1,0 +1,30 @@
+{
+  "name": "fake-pay-io-connector",
+  "vendor": "vtex",
+  "version": "2.0.1",
+  "title": "FakePayIOConnector",
+  "description": "FakePay implementation using PPF",
+  "builders": {
+    "paymentProvider": "1.x",
+    "node": "6.x"
+  },
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "heimdall.vtexpayments.com.br",
+        "path": "/api/payment-provider/callback/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
